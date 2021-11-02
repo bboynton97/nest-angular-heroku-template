@@ -7,7 +7,7 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
-    "heroku-postbuild": "cd frontend && ln -s ../node_modules node_modules && ng build --prod",
+    "heroku-postbuild": "cd frontend && ln -s ../node_modules node_modules && ng build --aot --configuration production",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
